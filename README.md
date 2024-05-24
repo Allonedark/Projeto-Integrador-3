@@ -1,13 +1,72 @@
-# Software de controle de estoque usando apenas JavaScript, HTML e CSS
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Controle de Estoque
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 
-- O software possui um **CRUD** completo e foi construido usando apenas Javascript (puro), HTML e CSS
+</head>
+<body>
+    <h1>Controle de Estoque</h1>
 
-- Devido ao sistema não possuir servidor os dados são salvos apenas na memória temporária.
+    <section class="wrapper style2 container special-alt">
+        <div class="row gtr-50">
+            <div class="col-8 col-12-narrower">
 
-- Toda lógica de programação foi constrida com a linguagem Javascript, o esqueleto básico foi construido com a linguagem de marcação HTML e os estilos foi criado usando a linguagem de estilos CSS.
+                <header style="width:100%; text-align: center">
+                    <h2>Insira os <strong>dados solicitados</strong> de forma correta
+                    <br />
+                    para o cadastro dos tecidos.</h2>
+                </header>
+                <p></p>
+                <footer>
+                </footer>
+            </div>
+        </div>
+    </section>
 
-- Na linguagem JavaScript há apenas 5 funções e o código não ultrapassa 90 linhas.
+    <p style="text-align: center">Por questões de segurança, iremos ocultar algumas informações.</br>
+    </p>
+    <div id="wrap">
+        <input type="text" placeholder="Tipo de tecido:">
+        <input type="text" placeholder="Quantidade/Peso:">
+        <input type="text" placeholder="Cor:">    
+        <input type="text" placeholder="Fornecedor:">
+        <input type="text" placeholder="Fone:">
+        <input type="text" placeholder="Data:">            
+    </div>
 
-- Foi iniciado a construção do back-end, porém não foi concluido.
+    <div id="botoes">
+        <button>Cadastrar</button>
+        <button>Excluir</button>
+        <button>Editar</button>
+    </div>
 
-# Resultado: 
+    <div id="saida">
+        <table border="0" width="100%" height="5%">
+            <tr>
+                <td width="30px">
+                </td>
+                <td>
+                    Tecido
+                </td>
+                <td>
+                    Qtd/Peso
+                </td>
+                <td>
+                    Cor
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <img src="logo.png" alt="logo univesp">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
